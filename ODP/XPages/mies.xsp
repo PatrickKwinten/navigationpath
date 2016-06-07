@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xc:ccLayout navigationPath="/Mies/.*"><xp:this.facets>
+	<xp:image url="/mies.jpg" id="image1" xp:key="facet_1"></xp:image></xp:this.facets></xc:ccLayout></xp:view>

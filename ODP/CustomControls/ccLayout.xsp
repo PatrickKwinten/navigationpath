@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+		<xp:this.facets>
+			<xc:ccMenu xp:key="LeftColumn"></xc:ccMenu></xp:this.facets>
+		<xe:this.configuration>
+			<xe:oneuiApplication
+				navigationPath="#{javascript:compositeData.navigationPath}"
+				productLogoAlt="navigationPath" titleBarName="Titlebar Tabs"
+				placeBarName="Placebar name">
+
+				<xe:this.footerLinks>
+					<xe:basicContainerNode label="Container 1">
+						<xe:this.children>
+							<xe:basicLeafNode label="Link 1" href="/"></xe:basicLeafNode>
+							<xe:basicLeafNode label="Link 2" href="/"></xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+					<xe:basicContainerNode label="Container 2">
+						<xe:this.children>
+							<xe:basicLeafNode label="Link 1" href="/"></xe:basicLeafNode>
+							<xe:basicLeafNode label="Link 2" href="/"></xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+				</xe:this.footerLinks>
+				<xe:this.titleBarTabs>
+					<xe:pageTreeNode label="Aap" selection="/Aap/.*"
+						page="/aap.xsp" selected="true">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Noot" selection="/Noot/.*"
+						page="/noot.xsp" selected="true">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Mies" selection="/Mies/.*"
+						page="/mies.xsp" selected="true">
+					</xe:pageTreeNode>
+				</xe:this.titleBarTabs>
+				<xe:this.bannerApplicationLinks>
+					<xe:basicLeafNode label="Application Link"></xe:basicLeafNode>
+				</xe:this.bannerApplicationLinks>
+				<xe:this.bannerUtilityLinks>
+					<xe:basicLeafNode label="Utility Link"></xe:basicLeafNode>
+				</xe:this.bannerUtilityLinks>
+			</xe:oneuiApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>
